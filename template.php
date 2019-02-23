@@ -65,11 +65,14 @@ font-weight: bold;
     </style>
 </head>
 <body>
-    <header>
+   <!-- <header>
         <?php $header_content ?>
     </header>
     <article>
 <?php $body_content ?>
-    </article>
+    </article>-->
+
+<?php $body_content ?>
+
 </body>
 </html>
