@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="Description" content="<?php $description ?>">
+    <meta name="Description" content="<?php echo $description; ?>">
             <meta name="viewport" content="width=device-width, initial-scale=1" />            
         
             
                 <link rel="shortcut icon" href="favicon.ico">
-<link rel="alternate" type="application/rss+xml" href="rss.xml" title="<?php $site_name ?>"/>
+<link rel="alternate" type="application/rss+xml" href="rss.xml" title="<?php echo $site_name; ?>"/>
 
-    <title><?php $page_title ?></title>
+    <title><?php echo $page_title; ?></title>
     <style type="text/css">
 
 header {
@@ -65,14 +65,6 @@ font-weight: bold;
     </style>
 </head>
 <body>
-   <!-- <header>
-        <?php $header_content ?>
-    </header>
-    <article>
-<?php $body_content ?>
-    </article>-->
-
-<?php $body_content ?>
-
+<?php echo $body_content; ?><br><?php echo date('r', $post_time); ?>
 </body>
 </html>

@@ -1,16 +1,12 @@
-Sketch in psuedocode!
+<?php
 
-read posts directory to array
-override output buffer
-include template
-iterate over posts
-include each (check precedence--will the $ stuff in the post bodies override rhe $ stuff in the template? look into it)
-output buffer to file with ${permalink}.html
-clear buffer
+$site_name = "Condensed Brain";
 
-Variables:
-$description
-$page_title
-$body_content
-$unix_date (timezone/format/whatever can be set in settings.php)
 
+foreach (glob("posts/*.php") as $filename)
+{
+require $filename;
+
+require "template.php";
+}
+?>
